@@ -11,6 +11,9 @@
     m = 1
     o = 1
     r = 1
+    >>> contar_caracteres('ovo')
+    o = 2
+    v = 1
     """
 
 def contar_caracteres(s):
@@ -26,5 +29,10 @@ def contar_caracteres(s):
             caracter_anterior = i
             contador = 1
     print(f'{caracter_anterior} = {contador}')
+
+# if __name__ == '__main__':
+#     contar_caracteres('marcelo')
+#     print()
+#     contar_caracteres('banana')
 
 
