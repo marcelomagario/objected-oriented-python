@@ -20,3 +20,9 @@ class Computer:
 
     def computer_settings(self):
         print(self.brand, self.memory_ram, self.video_board)
+# Instance
+if __name__ == '__main__':
+    computer1 = Computer(brand='Dell', memory_ram='128DDR', video_board='AMD Radeon')
+    computer1.turn_on()
+    computer1.turn_off()
+    computer1.computer_settings()
