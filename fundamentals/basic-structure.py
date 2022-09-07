@@ -20,4 +20,3 @@ class Computer:
 
     def computer_settings(self):
         print(self.brand, self.memory_ram, self.video_board)
-
