@@ -10,20 +10,25 @@ class Bola:
 
     # Metodos
 
-    def trocaCor(self):
-        print('Aqui será a troca de cores')
+    def trocaCor(self, cor):
+        self.cor = cor
+        print(f'a nova cor é: {self.cor}')
 
     def mostraCor(self):
         print(f'mostra a cor: {self.cor}')
 
 # Implementação - Instanciação
-melao = Bola('Amarela', 12, 'Plastico')
-chumbo = Bola('Preta', 14, 'Couro')
 
+
+# melão
+melao = Bola('Amarela', 12, 'Plastico')
 print(melao.cor, melao.circunferencia, melao.material)
-melao.trocaCor()
+melao.mostraCor()
+melao.trocaCor('Verde')
 melao.mostraCor()
 
+# chumbo
+chumbo = Bola('Preta', 14, 'Couro')
 print(chumbo.cor, chumbo.circunferencia, chumbo.material)
-chumbo.trocaCor()
 chumbo.mostraCor()
+chumbo.trocaCor('Prata')
