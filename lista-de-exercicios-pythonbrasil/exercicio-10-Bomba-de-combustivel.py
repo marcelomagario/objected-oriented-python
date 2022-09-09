@@ -18,12 +18,34 @@ class BombaCombustivel:
         print(f'O valor a ser pago é de R$ {custo_abastecimento} ')
         self.quantidade_combustivel -= litros_abastecidos
 
-    # def alterarValor(self):
+    def alterarValor(self):
+        novo_preco = float(input('Informe o novo preço do combustível (R$/litro): '))
+        self.valor_litro = novo_preco
+
     # def alterarCombustivel(self):
     # def alterarQuantidadeCombustivel(self):
 
  #implementação
 
-texaco = BombaCombustivel('Diesel', 2.2, 100)
-texaco.abastecerPorValor()
-texaco.abastecerPorLitro()
+print('#'*40)
+print(f'Postão do canal 2')
+print('#'*40)
+print('Selecione a opção desejada')
+opcao_do_usuario = int(input('1- Administrador, 2 - Frentista: '))
+if opcao_do_usuario == 1:
+    print('Menu')
+    opcao_do_usuario = int(input('1 - Cadastrar nova bomba, 2 - Alterar preço: '))
+    if opcao_do_usuario == 1:
+        print('# Inserir aqui o método de cadastrar uma nova bomba')
+    if opcao_do_usuario == 2:
+        print('# Inserir aqui o método para alterar o preço do combustível')
+
+if opcao_do_usuario == 2:
+    print('# Inserir aqui todos os métodos do frentista')
+
+
+# bomba1 = BombaCombustivel('Diesel', 2.2, 100)
+# bomba1.abastecerPorValor()
+# bomba1.abastecerPorLitro()
+# bomba1.alterarValor()
+# print(bomba1.__dict__)
